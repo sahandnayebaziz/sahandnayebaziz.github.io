@@ -12,5 +12,12 @@
     "platform": "macOS",
     "description": "macOS Bates Labeling",
     "imageUrl": "bates.png"
+  },
+  {
+    "slug": "frame",
+    "title": "Frame",
+    "platform": "iOS",
+    "description": "Frame images on iOS into 1:1 and 4:5",
+    "imageUrl": "frame.jpg"
   }
 ]
