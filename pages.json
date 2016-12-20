@@ -19,5 +19,12 @@
     "platform": "iOS",
     "description": "Frame images on iOS into 1:1 and 4:5",
     "imageUrl": "frame.jpg"
+  },
+  {
+    "slug": "breakr",
+    "title": "Breakr",
+    "platform": "iOS",
+    "description": "Share class schedules",
+    "imageUrl": "breakr.png"
   }
 ]
