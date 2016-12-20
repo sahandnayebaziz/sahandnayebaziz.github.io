@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>{{title}} - {{platform}}</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif
+    }
+    @media (max-width: 800px) {
+      body {
+        padding: 20px;
+      }
+    }
+    @media (min-width: 800px) {
+      body {
+        padding: 200px;
+      }
+    }
+
+    h1 {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 400;
+      color: black;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 30px;
+      border-radius: 11px;
+    }
+
+    li {
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    {{#each this}}
+    <a href="{{slug}}.html">
+      <li>
+        <img src="./{{imageUrl}}" height="59"/><h1>{{title}}</h1>
+      </li>
+    </a>
+    {{/each}}
+  </ul>
+</body>
+</html>
