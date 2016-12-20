@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "freesurf",
+    "title": "Freesurf",
+    "platform": "iOS",
+    "description": "California surf forecasts on your iPhone and iPad",
+    "imageUrl": "freesurf.jpg"
+  },
+  {
+    "slug": "bates",
+    "title": "Bates",
+    "platform": "macOS",
+    "description": "macOS Bates Labeling",
+    "imageUrl": "bates.png"
+  }
+]
