@@ -1,17 +1,24 @@
 [
   {
-    "slug": "freesurf",
-    "title": "Freesurf",
-    "platform": "iOS",
-    "description": "California surf forecasts on your iPhone and iPad",
-    "imageUrl": "freesurf.jpg"
-  },
-  {
     "slug": "bates",
     "title": "Bates",
     "platform": "macOS",
     "description": "macOS Bates numbering",
     "imageUrl": "bates.png"
+  },
+  {
+    "slug": "breakr",
+    "title": "Breakr",
+    "platform": "iOS",
+    "description": "Share class schedules",
+    "imageUrl": "breakr.png"
+  },
+  {
+    "slug": "dana-hills",
+    "title": "Dana Hills",
+    "platform": "iOS",
+    "description": "Dana Hills' Official iOS App",
+    "imageUrl": "dana-hills.jpg"
   },
   {
     "slug": "frame",
@@ -21,10 +28,10 @@
     "imageUrl": "frame.jpg"
   },
   {
-    "slug": "breakr",
-    "title": "Breakr",
+    "slug": "freesurf",
+    "title": "Freesurf",
     "platform": "iOS",
-    "description": "Share class schedules",
-    "imageUrl": "breakr.png"
+    "description": "California surf forecasts on your iPhone and iPad",
+    "imageUrl": "freesurf.jpg"
   }
 ]
