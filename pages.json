@@ -39,6 +39,7 @@
     "title": "Galaxies",
     "platform": "iOS",
     "description": "Share, see your friends, and save what you love forever.",
-    "imageUrl": "galaxies.png"
+    "imageUrl": "galaxies.png",
+    "customCSS": "html { background-color: black; color: white; } a { color: white; }"
   }
 ]
