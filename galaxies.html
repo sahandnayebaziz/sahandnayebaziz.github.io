@@ -74,8 +74,8 @@
     var starsContainer = document.getElementById('stars');
 
     for (var x = 0; x < 100; x++) {
-      var leftOffset = Math.floor(Math.random() * screen.width + 1);
-      var topOffset = Math.floor(Math.random() * screen.height + 1);
+      var leftOffset = Math.floor(Math.random() * window.innerWidth + 1);
+      var topOffset = Math.floor(Math.random() * window.innerHeight + 1);
       var size = Math.floor(Math.random() * 9 + 1);
       var opacity = Math.random();
       var glimmerSpeed = Math.max(Math.floor(Math.random() * 20 + 1), 6);
@@ -94,8 +94,8 @@
     }
 
     for (var x = 0; x < 1000; x++) {
-      var leftOffset = Math.floor(Math.random() * screen.width + 1);
-      var topOffset = Math.floor(Math.random() * screen.height + 1);
+      var leftOffset = Math.floor(Math.random() * window.innerWidth + 1);
+      var topOffset = Math.floor(Math.random() * window.innerHeight + 1);
       var size = Math.floor(Math.random() * 2 + 1);
       var opacity = Math.random() / 2;
       var glimmerSpeed = Math.max(Math.floor(Math.random() * 50 + 1), 6);
