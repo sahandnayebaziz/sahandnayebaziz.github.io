@@ -4,25 +4,55 @@
   <meta name="viewport" content="initial-scale=1.0">
   <style>
     html {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      margin-right: 20px;
+      text-decoration: none;
+      transition: opacity 0.2s ease-in-out;
+    }
+    a:hover {
+      opacity: 0.6;
     }
     @media (max-width: 800px) {
       body {
         padding: 20px;
       }
+
+      body .content {
+        margin-top: 40px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
     @media (min-width: 800px) {
       body {
-        padding: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      body .content {
+        padding-left: 200px;
+      }
+
+      p {
+        font-size: 18px;
       }
     }
 
     p {
-      font-size: 18px;
       line-height: 1.4446;
       font-weight: 400;
       letter-spacing: 0em;
       max-width: 570px;
+    }
+
+    p.description {
+      font-weight: 200;
     }
 
     img {
@@ -32,50 +62,46 @@
     html { background-color: black; color: white; } a { color: white; }
 
     #stars {
-      position: absolute;
+      position: fixed;
       overflow: hidden;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
       pointer-events: none;
+      z-index: -1;
+      opacity: 0.6;
     }
 
     @keyframes glimmer {
       50% { opacity: 0; }
     }
-
-    h1 {
-      margin-top: 80px;
-    }
   </style>
 </head>
 <body>
-  <div id="stars">
-
+  <div id="stars"></div>
+  <div class='content'>
+    <h1>Galaxies</h1>
+    <p class="description">
+      Your photos have never looked better.
+    </p>
+    <p class="description">
+      Galaxies dramatically improves the most important aspects of sharing photos with friends. Your photos cover edge-to-edge. Your Galaxy, personal and creatively yours, lights up their display. The easiest way to save a friend's photos. A beautiful design. Immersive and quiet interactions. Free, forever.
+    </p>
+    <p>
+      <a href="./Galaxies%20Press%20Kit.zip">Download the press kit</a> <a target="_blank" href="https://twitter.com/galaxiessupport">@GalaxiesSupport</a>
+    </p>
+    <p>
+      <img src="./galaxies.jpg" height="59"/>
+    </p>
   </div>
-  <h1>Galaxies</h1>
-  <p>
-    Thank you for coming to the Galaxies information page. <br />For questions, comments, and inquiries <a href="mailto:galaxiesdev@gmail.com">email us</a>.
-  </p>
-  <p>
-    <a href="./Galaxies%20Press%20Kit.zip">Download the press kit</a>
-  </p>
-  <p>
-    <a href="https://twitter.com/galaxiessupport">@GalaxiesSupport</a>
-  </p>
-  <p>
-    Thank you.
-  </p>
-  <p>
-    <img src="./galaxies.png" height="59"/>
-  </p>
+
   <script>
     var starsContainer = document.getElementById('stars');
 
     for (var x = 0; x < 100; x++) {
-      var leftOffset = Math.floor(Math.random() * window.innerWidth + 1);
-      var topOffset = Math.floor(Math.random() * window.innerHeight + 1);
+      var leftOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 1280) + 1);
+      var topOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 800) + 1);
       var size = Math.floor(Math.random() * 9 + 1);
       var opacity = Math.random();
       var glimmerSpeed = Math.max(Math.floor(Math.random() * 20 + 1), 6);
@@ -94,10 +120,10 @@
     }
 
     for (var x = 0; x < 1000; x++) {
-      var leftOffset = Math.floor(Math.random() * window.innerWidth + 1);
-      var topOffset = Math.floor(Math.random() * window.innerHeight + 1);
+      var leftOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 1280) + 1);
+      var topOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 800) + 1);
       var size = Math.floor(Math.random() * 2 + 1);
-      var opacity = Math.random() / 2;
+      var opacity = Math.random() / 1.8;
       var glimmerSpeed = Math.max(Math.floor(Math.random() * 50 + 1), 6);
 
       var newElement = document.createElement('div');
