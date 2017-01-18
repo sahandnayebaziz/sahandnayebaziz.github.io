@@ -33,13 +33,5 @@
     "platform": "iOS",
     "description": "California surf forecasts on your iPhone and iPad",
     "imageUrl": "freesurf.jpg"
-  },
-  {
-    "slug": "galaxies",
-    "title": "Galaxies",
-    "platform": "iOS",
-    "description": "Share, see your friends, and save what you love forever.",
-    "imageUrl": "galaxies.png",
-    "customCSS": "html { background-color: black; color: white; } a { color: white; }"
   }
 ]

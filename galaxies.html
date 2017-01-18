@@ -29,16 +29,39 @@
     }
 
     html { background-color: black; color: white; } a { color: white; }
+
+    #stars {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+    }
+
+    @keyframes glimmer {
+      50% { opacity: 0; }
+    }
+
+    h1 {
+      margin-top: 80px;
+    }
   </style>
 </head>
 <body>
+  <div id="stars">
+
+  </div>
   <h1>Galaxies</h1>
-  <p>Share, see your friends, and save what you love forever.</p>
   <p>
-    Thank you for coming to the Galaxies information page. This page is maintained by the developer of Galaxies, Sahand Nayebaziz.
+    Thank you for coming to the Galaxies information page. For questions, comments, and inquiries <a href="mailto:galaxiesdev@gmail.com">email us</a>.
   </p>
   <p>
-    For support or sharing feedback, <a href="mailto:designedeverything@icloud.com">send Sahand an email</a>.
+    <a href="./Galaxies%20Press%20Kit.zip">Download the press kit</a>
+  </p>
+  <p>
+    <a href="https://twitter.com/galaxiessupport">@GalaxiesSupport</a>
   </p>
   <p>
     Thank you.
@@ -46,5 +69,48 @@
   <p>
     <img src="./galaxies.png" height="59"/>
   </p>
+  <script>
+    var starsContainer = document.getElementById('stars');
+
+    for (var x = 0; x < 100; x++) {
+      var leftOffset = Math.floor(Math.random() * screen.width + 1);
+      var topOffset = Math.floor(Math.random() * screen.height + 1);
+      var size = Math.floor(Math.random() * 9 + 1);
+      var opacity = Math.random();
+      var glimmerSpeed = Math.max(Math.floor(Math.random() * 20 + 1), 6);
+
+      var newElement = document.createElement('div');
+      newElement.style.position = 'absolute';
+      newElement.style.left = leftOffset + 'px';
+      newElement.style.top = topOffset + 'px';
+      newElement.style.width = size + 'px';
+      newElement.style.height = size + 'px';
+      newElement.style.backgroundColor = 'white';
+      newElement.style.opacity = opacity;
+      newElement.style.borderRadius = '10px';
+      newElement.style.animation = 'glimmer ' + glimmerSpeed + 's ease-in-out infinite';
+      starsContainer.appendChild(newElement);
+    }
+
+    for (var x = 0; x < 1000; x++) {
+      var leftOffset = Math.floor(Math.random() * screen.width + 1);
+      var topOffset = Math.floor(Math.random() * screen.height + 1);
+      var size = Math.floor(Math.random() * 2 + 1);
+      var opacity = Math.random() / 2;
+      var glimmerSpeed = Math.max(Math.floor(Math.random() * 50 + 1), 6);
+
+      var newElement = document.createElement('div');
+      newElement.style.position = 'absolute';
+      newElement.style.left = leftOffset + 'px';
+      newElement.style.top = topOffset + 'px';
+      newElement.style.width = size + 'px';
+      newElement.style.height = size + 'px';
+      newElement.style.backgroundColor = 'white';
+      newElement.style.opacity = opacity;
+      newElement.style.borderRadius = '10px';
+      newElement.style.animation = 'glimmer ' + glimmerSpeed + 's ease-in-out infinite';
+      starsContainer.appendChild(newElement);
+    }
+  </script>
 </body>
 </html>
