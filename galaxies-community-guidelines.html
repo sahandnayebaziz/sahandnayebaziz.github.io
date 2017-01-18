@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>Galaxies - iOS</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      text-decoration: none;
+      transition: opacity 0.2s ease-in-out;
+    }
+    a:hover {
+      opacity: 0.6;
+    }
+    @media (max-width: 800px) {
+      body {
+        padding: 20px;
+      }
+
+      body .content {
+        margin-top: 40px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+    @media (min-width: 800px) {
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      body .content {
+        padding-left: 200px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      line-height: 1.6em;
+      font-weight: 400;
+      letter-spacing: 0em;
+      max-width: 570px;
+    }
+
+    p.description {
+      font-weight: 200;
+    }
+
+    p.links {
+      max-width: none;
+    }
+
+    p.links a {
+      margin-right: 20px;
+    }
+
+    p:not(.links) a {
+      padding: 2px 8px 4px;
+      background-color: #e4e4e4;
+      border-radius: 4px;
+      color: black;
+      margin: 0px 2px;
+    }
+
+    p:not(.links) a:hover {
+      color: black;
+      background-color: white;
+      opacity: 1;
+    }
+
+    img {
+      border-radius: 11px;
+    }
+
+    html { background-color: black; color: white; } a { color: white; }
+
+    #stars {
+      position: fixed;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    @keyframes glimmer {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Galaxies Community Guidelines</h1>
+  </div>
+</body>
+</html>
