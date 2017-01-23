@@ -36,6 +36,11 @@
       p {
         font-size: 14px;
       }
+
+      p.links a {
+        display: block;
+        margin: 10px auto;
+      }
     }
     @media (min-width: 800px) {
       body {
@@ -70,8 +75,24 @@
       max-width: none;
     }
 
+    a.images {
+      display: block;
+      margin-top: 40px;
+    }
+
     img {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    img:first-of-type {
       border-radius: 11px;
+    }
+
+    img.app-store {
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 16px;
     }
 
     html { background-color: black; color: white; } a { color: white; }
@@ -106,8 +127,9 @@
     <p class="links">
       <a href="./Galaxies%20Press%20Kit.zip">Download the press kit</a> <a href="https://twitter.com/galaxiessupport">@GalaxiesSupport</a> <a href="galaxies-community-guidelines.html">Community Guidelines</a> <a href="galaxies-privacy.html">Terms and Privacy Policy</a>
     </p>
-    <a href="https://itunes.apple.com/us/app/galaxies/id1182575034">
+    <a class="images" href="https://itunes.apple.com/us/app/galaxies/id1182575034">
       <img src="./galaxies.jpg" height="59"/>
+      <img class="app-store" src="./appstore.svg" height="40"/>
     </a>
   </div>
 
