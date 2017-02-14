@@ -1,0 +1,204 @@
+<html>
+<head>
+  <title>Galaxies - iOS</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="Description" content="Galaxies redefines the position of a social network to be one that puts beautiful design and ease of use first." />
+  <meta property="og:url" content="https://sahandnayebaziz.github.io/galaxies" />
+  <meta property="og:title" content="Galaxies" />
+  <meta property="og:description" content="Galaxies redefines the position of a social network to be one that puts beautiful design and ease of use first." />
+  <meta property="og:image" content="https://sahandnayebaziz.github.io/galaxies-og.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Galaxies" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="apple-itunes-app" content="app-id=1182575034" />
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      margin-right: 20px;
+      text-decoration: none;
+      transition: opacity 0.2s ease-in-out;
+    }
+    p.description a:hover, p.links a:hover {
+      opacity: 0.6;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        padding: 20px;
+      }
+
+      body .content {
+        margin-top: 40px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      p.links a {
+        display: block;
+        margin: 10px auto;
+      }
+
+      video {
+        margin: 100 auto;
+        display: block;
+      }
+    }
+    @media (min-width: 800px) {
+      .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      body {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    max-width: 1075px;
+    min-width: 940px;
+    margin: 0 auto;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      line-height: 1.4446;
+      font-weight: 400;
+      letter-spacing: 0em;
+      max-width: 570px;
+    }
+
+    p.description {
+      font-weight: 200;
+    }
+
+    p.links {
+      font-size: 14px;
+      font-weight: 500;
+      max-width: none;
+    }
+
+    a.images {
+      display: block;
+      margin-top: 40px;
+    }
+
+    img {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    img:first-of-type {
+      border-radius: 11px;
+    }
+
+    img.app-store {
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 16px;
+    }
+
+    html { background-color: black; color: white; } a { color: white; }
+
+    #stars {
+      position: fixed;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    @keyframes glimmer {
+      50% { opacity: 0; }
+    }
+
+    video {
+      border: 1px solid rgb(28, 28, 28);
+    }
+  </style>
+</head>
+<body>
+  <div id="stars"></div>
+  <div class="container">
+    <div class='content'>
+      <h1>Galaxies</h1>
+      <p class="description">
+        Your photos have never looked better.
+      </p>
+      <p class="description">
+        Galaxies dramatically improves the most important aspects of sharing photos with friends. Your photos cover edge-to-edge. Your Galaxy, personal and creatively yours, lights up the display. The easiest way to save a friend's photos. A beautiful design. Immersive and quiet interactions. Free, forever.
+      </p>
+      <p class="links">
+        <a href="./Galaxies%20Press%20Kit.zip">Download the press kit</a> <a href="https://twitter.com/galaxiessupport">@GalaxiesSupport</a> <a href="galaxies-privacy.html">Terms and Privacy Policy</a>
+      </p>
+      <a class="images" href="https://itunes.apple.com/us/app/galaxies/id1182575034">
+        <img src="./galaxies.jpg" height="59"/>
+        <img class="app-store" src="./appstore.svg" height="40"/>
+      </a>
+    </div>
+  </div>
+
+  <video width="338" height="602" autoplay>
+    <source src="galaxies_720p.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    var starsContainer = document.getElementById('stars');
+
+    for (var x = 0; x < 100; x++) {
+      var leftOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 1280) + 1);
+      var topOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 800) + 1);
+      var size = Math.floor(Math.random() * 9 + 1);
+      var opacity = Math.random();
+      var glimmerSpeed = Math.max(Math.floor(Math.random() * 20 + 1), 6);
+
+      var newElement = document.createElement('div');
+      newElement.style.position = 'absolute';
+      newElement.style.left = leftOffset + 'px';
+      newElement.style.top = topOffset + 'px';
+      newElement.style.width = size + 'px';
+      newElement.style.height = size + 'px';
+      newElement.style.backgroundColor = 'white';
+      newElement.style.opacity = opacity;
+      newElement.style.borderRadius = '10px';
+      newElement.style.animation = 'glimmer ' + glimmerSpeed + 's ease-in-out infinite';
+      starsContainer.appendChild(newElement);
+    }
+
+    for (var x = 0; x < 1000; x++) {
+      var leftOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 1280) + 1);
+      var topOffset = Math.floor(Math.random() * Math.max(window.innerWidth, 800) + 1);
+      var size = Math.floor(Math.random() * 2 + 1);
+      var opacity = Math.random() / 1.8;
+      var glimmerSpeed = Math.max(Math.floor(Math.random() * 50 + 1), 6);
+
+      var newElement = document.createElement('div');
+      newElement.style.position = 'absolute';
+      newElement.style.left = leftOffset + 'px';
+      newElement.style.top = topOffset + 'px';
+      newElement.style.width = size + 'px';
+      newElement.style.height = size + 'px';
+      newElement.style.backgroundColor = 'white';
+      newElement.style.opacity = opacity;
+      newElement.style.borderRadius = '10px';
+      newElement.style.animation = 'glimmer ' + glimmerSpeed + 's ease-in-out infinite';
+      starsContainer.appendChild(newElement);
+    }
+  </script>
+</body>
+</html>
