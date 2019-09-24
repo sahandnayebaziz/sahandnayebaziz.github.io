@@ -1,1 +1,116 @@
-test
+// Dana Hills Calendar (Tutorials and Special Days)
+//
+// Sahand Nayebaziz ('11) sahand@sahand.me
+// Matt Exworthy ('18) mexworthy@gmail.com
+// Dmitri Meyer ('20) dmitrimeyer@gmail.com
+//
+// Syntax:
+// - Any line that starts with '//' is ignored by the parser
+// - Each line can contain one day
+// - Syntax for each day is like this: [DATE] [OPTIONAL TYPE] [OPTIONAL MESSAGE]
+//   - Must be separated by spaces
+//   - DATE must be written in MM/DD/YYYY
+//   - TYPE can be one of T1, T2, T3, T4, T5, T6, TSC, TSC0, LS16
+//   - OPTIONAL MESSAGE can be anything, but must start with "message:" To be picked up
+//
+// The "types" are shortcuts for getting the app to display which tutorial that day is
+// The "optional message" is your space to put whatever you want if the day is something special
+//
+// Examples
+// 09/20/2016 T1                                    Makes a day tutorial 1
+// 09/20/2016 T2                                    Makes a day tutorial 2
+// 09/20/2016 LS16                                  Makes a day late start 1-6
+// 09/20/2016 T6 message: 2nd Progress Report       Makes a day tutorial 6 AND displays the message "2nd Progress Report"
+// 09/20/2016 message: Thanksgiving Recess          Makes a day that just displays the message "Thanksgiving Recess"
+// 09/20/2016                                       Won't show anything in the app, because why would we show a date with no tutorial or message?
+
+// UPDATED 21 AUGUST 2018 BY MATT EXWORTHY
+
+
+ 09/05/2019 T3 message: BTSN
+ 09/06/2019 message: minimum day
+ 09/09/2019 LS16
+ 09/10/2019 T5
+ 09/11/2019 T4
+ 09/12/2019 message: 0/HR
+ 09/13/2019 T6
+ 09/16/2019 LS16
+ 09/17/2019 T1
+ 09/18/2019 T2
+ 09/19/2019 T3
+ 09/20/2019 message: HR
+ 09/23/2019 LS16
+ 09/24/2019 T5
+ 09/25/2019 T4
+ 09/26/2019 message: 0/HR
+ 09/27/2019 T6 message: 1st Progress Report
+ 09/30/2019 LS16
+ 10/01/2019 T1
+ 10/02/2019 T2
+ 10/03/2019 T3
+ 10/04/2019 message: Dual Pep Rally
+ 10/07/2019 LS16
+ 10/08/2019 T5
+ 10/09/2019 T4
+ 10/10/2019 message: 0/HR
+ 10/11/2019 T6
+ 10/14/2019 LS16
+ 10/15/2019 T1
+ 10/16/2019 T2
+ 10/17/2019 T3
+ 10/18/2019 message: HR
+ 10/21/2019 LS16
+ 10/22/2019 T5
+ 10/23/2019 T4
+ 10/24/2019 message: 0/HR
+ 10/25/2019 T6
+ 10/28/2019 T2
+ 10/29/2019 T1
+ 10/30/2019 message: HR
+ 10/31/2019 T3
+ 11/01/2019 message: Student Holiday
+ 11/04/2019 LS16 
+ 11/05/2019 T5
+ 11/06/2019 T4
+ 11/07/2019 message: 0/HR
+ 11/08/2019 T6 message: 2nd Progress Report
+ 11/11/2019 message: Veteran's Day
+ 11/12/2019 T1
+ 11/13/2019 T2
+ 11/14/2019 T3
+ 11/15/2019 message: HR
+ 11/18/2019 LS16
+ 11/19/2019 T5
+ 11/20/2019 T4
+ 11/21/2019 message: 0/HR
+ 11/22/2019 T6
+ 11/25/2019 message: Thanksgiving Recess
+ 11/26/2019 message: Thanksgiving Recess
+ 11/27/2019 message: Thanksgiving Recess
+ 11/28/2019 message: Thanksgiving Recess
+ 11/29/2019 message: Thanksgiving Recess
+ 12/02/2019 LS16
+ 12/03/2019 T1
+ 12/04/2019 T2
+ 12/05/2019 T3
+ 12/06/2019 message: Dual Pep Rally
+ 12/09/2019 LS16
+ 12/10/2019 T5
+ 12/11/2019 T4
+ 12/12/2019 message: 0/HR Zero Period Finals
+ 12/13/2019 T6 message: Zero Period Finals
+ 12/16/2019 LS16
+ 12/17/2019 message: Finals T1-T-T4-4
+ 12/18/2019 message: Finals T3-3-T5-5
+ 12/19/2019 message: Finals T2-2-T6-6
+ 12/20/2019 message: Student Holiday
+ 12/23/2019 message: Winter Recess
+ 12/24/2019 message: Winter Recess
+ 12/25/2019 message: Winter Recess
+ 12/26/2019 message: Winter Recess
+ 12/27/2019 message: Winter Recess
+ 12/30/2019 message: Winter Recess
+ 12/31/2019 message: Winter Recess
+ 01/01/2020 message: Winter Recess
+ 01/02/2020 message: Winter Recess
+ 01/03/2020 message: Winter Recess
